@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root{
+    --header-height: 3rem;
+  
+    /*===== Colors =====*/
+    --first-color: #FCA4A6;
+    --first-color-dark: #C1576A;
+    --first-color-darken: #A83E51;
+    --white-color: #FCF8F8;
+    
+    /*===== Font and typography =====*/
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2.5rem;
+    --normal-font-size: .938rem;
+    
+    /*===== z index =====*/
+    --z-fixed: 100;
+  }
+
+  body{
+    margin: var(--header-height) 0 0 0;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    background: rgb(29,33,88);
+    background: linear-gradient(45deg, rgba(29,33,88,1) 0%, rgba(120,57,182,1) 0%, rgba(76,0,255,1) 100%);
+
+  }
+
+  .logos {
+      width: 100%;
+      height: 100vh;
+      background: white;
+  }
+
+  .logos img {
+      width: 200px;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 5rem;
+  }
+
+  .wave {
+    position: relative;
+
+  }
+
+  .message {
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-bottom: 5rem;
+  }
+
+  .message h2 {
+      padding: 1rem;
+      font-size: 4rem;
+      width: 100%;
+      text-align: center;
+  }
+
+  .message-text {
+      padding: 2rem;
+      font-size: 1rem;
+  }
+
+  .message-text b {
+    font-size: 1.2rem;
+    background: #CFAEA4;
+    background: -webkit-linear-gradient(to right, #CFAEA4 0%, #CF99CF 100%);
+    background: -moz-linear-gradient(to right, #CFAEA4 0%, #CF99CF 100%);
+    background: linear-gradient(to right, #CFAEA4 0%, #CF99CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .message h3 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #CFC1C1;
+    background: -webkit-radial-gradient(circle farthest-corner at top right, #CFC1C1 51%, #C6A4CF 98%);
+    background: -moz-radial-gradient(circle farthest-corner at top right, #CFC1C1 51%, #C6A4CF 98%);
+    background: radial-gradient(circle farthest-corner at top right, #CFC1C1 51%, #C6A4CF 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .spacer {
+    height: 2px;
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: block;
+  }
+
+  .qr-1, .qr-2 {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  footer {
+    padding-block: 2rem;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  footer h4 {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .myButton {
+    background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color:#ffc477;
+    border-radius:28px;
+    border:1px solid #eeb44f;
+    display:block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #cc9f52;
+    margin: 0 auto;
+    width: 150px;
+  }
+
+  .myButton:hover {
+    background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+    background-color:#fb9e25;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }         
+  
+  @media screen and (min-width: 769px){
+      .logos {
+          width: 100%;
+          height: 60vh;
+          display: flex;
+          justify-content: center;
+          background: white;
+      }
+
+      .logos img {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-inline: 2rem;
+      }
+
+      .message-text {
+        width: 1024px;
+        margin: 0 auto;
+        padding: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .message-text b {
+      font-size: 2.3rem;
+      background: #CFAEA4;
+      background: -webkit-linear-gradient(to right, #CFAEA4 0%, #CF99CF 100%);
+      background: -moz-linear-gradient(to right, #CFAEA4 0%, #CF99CF 100%);
+      background: linear-gradient(to right, #CFAEA4 0%, #CF99CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .message h2 {
+      padding: 1rem;
+      font-size: 6rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .message h3 {
+      padding: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      background: #CFC1C1;
+      background: -webkit-radial-gradient(ellipse farthest-corner at top right, #CFC1C1 0%, #C6A4CF 100%);
+      background: -moz-radial-gradient(ellipse farthest-corner at top right, #CFC1C1 0%, #C6A4CF 100%);
+      background: radial-gradient(ellipse farthest-corner at top right, #CFC1C1 0%, #C6A4CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .qr-code-container {
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+    }
+      
+  }
